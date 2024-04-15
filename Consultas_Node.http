@@ -1,0 +1,100 @@
+#-----------------------------LIBROS---------------------------------------
+### Obtener todos los libros
+GET http://localhost:3000/api/v1/books HTTP/1.1
+Content-Type: application/json
+
+{}
+
+### Obtener libro por ID
+GET http://localhost:3000/api/v1/books/id/2 HTTP/1.1
+Content-Type: application/json
+
+{}
+
+### Obtener libro por paginas
+GET http://localhost:3000/api/v1/books/pages/200 HTTP/1.1
+Content-Type: application/json
+
+{}
+
+### Obtener libro por author
+GET http://localhost:3000/api/v1/books/author/Autor1 HTTP/1.1
+Content-Type: application/json
+
+{}
+
+### Crear un nuevo libro
+POST http://localhost:3000/api/v1/books/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Libro 4",
+    "author": "Autor 4",
+    "pages": 250,
+    "description": "Una Descripcion del Libro4",
+    "id": 4
+}
+
+### Actualizar un libro existente
+PATCH http://localhost:3000/api/v1/books/update/3 HTTP/1.1
+conContent-Type: application/json
+
+{}
+
+### Eliminar un libro existente
+DELETE http://localhost:3000/api/v1/books/delete/4 HTTP/1.1
+conContent-Type: application/json
+
+
+
+
+#-----------------------------CLIENTES---------------------------------------
+### Obtener todos los libros
+GET http://localhost:3001/api/v1/clients HTTP/1.1
+Content-Type: application/json
+
+{}
+
+### Obtener cliente por ID
+GET http://localhost:3001/api/v1/clients/id/2 HTTP/1.1
+Content-Type: application/json
+
+{}
+
+### Obtener cliente por edad
+GET http://localhost:3001/api/v1/clients/age/25 HTTP/1.1
+Content-Type: application/json
+
+{}
+
+### Obtener cliente por genero
+GET http://localhost:3001/api/v1/clients/gender/masculino HTTP/1.1
+Content-Type: application/json
+
+{}
+
+### Crear un nuevo cliente
+POST http://localhost:3001/api/v1/clients/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "cliente 5",
+    "lastName": "apellido 5",
+    "email": "corrreo5@gmail.com",
+    "gender": "femenino",
+    "age": 18,
+    "id": 5
+}
+
+### Actualizar un cliente existente
+PATCH http://localhost:3001/api/v1/clients/update/4 HTTP/1.1
+conContent-Type: application/json
+
+{}
+
+### Eliminar un cliente existente
+DELETE http://localhost:3001/api/v1/clients/delete/5 HTTP/1.1
+conContent-Type: application/json
+
+##URI
+##MONGO_URI=mongodb+srv://pipe2893:w01XhYIx9xWeLkHK@filtro.3cjnv7i.mongodb.net/
